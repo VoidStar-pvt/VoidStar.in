@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- LINEARICONS -->
+		<link rel="stylesheet" href="fonts/linearicons/style.css">
+		
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="css/style.css">
+
+		<script type="text/javascript">
+			function numonly(input)
+			{
+				var no = /[^0-9]/g;
+				input.value = input.value.replace(no,""); 
+			}
+		
+		  </script>
+	</head>
+
+	<body>
+		
+		<div class="wrapper">
+			
+			<div class="inner">
+				<img src="images/image-1.png" alt="" class="image-1">
+				<form action="" method="post" id="frmsubmit">
+
+					<div class="img-3">
+						<img src="images/image-3.png" width="120px" height="110px" >
+						</div><br/>
+					<h3>WELCOME To VoidStar pvt.ltd<br/></h3>
+					<div class="form-holder">
+						<span class="lnr lnr-user"></span>
+						<input type="text" name="Name" class="form-control" placeholder="Full Name" required autocomplete="off">
+					</div>
+					<div class="form-holder">
+						<span class="lnr lnr-phone-handset"></span>
+						<input type="text" name="Phone No" class="form-control" placeholder="Phone Number" autocomplete="off" required maxlength="10" onkeyup="numonly(this)" >
+					</div>
+					<div class="form-holder">
+						<span class="lnr lnr-envelope"></span>
+						<input type="email" name="Email" class="form-control" autocomplete="off" placeholder="Mail Id" required>
+					</div>
+					
+					<button id="btnsubmit">
+						<span>Submit</span>
+					</button> <br/>
+					<div id="msg"></div>
+					
+				</form>
+				<!--<img src="images/image-2.png" alt="" class="image-2">-->
+			</div>
+			
+		</div>
+		
+		<script src="js/jquery-3.3.1.min.js"> </script>
+		<script src="js/main.js"> </script>
+		
+	</body>
+</html>
